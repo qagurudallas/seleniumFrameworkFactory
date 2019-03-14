@@ -9,7 +9,9 @@ public class SafariDriverManager extends DriverManager {
 	protected void createWebDriver() {
 		
 		SafariOptions options = new SafariOptions();
+		options.setCapability("safari.cleanSession", true);
 		this.driver = new SafariDriver(options);
+		
 		
 	}
 

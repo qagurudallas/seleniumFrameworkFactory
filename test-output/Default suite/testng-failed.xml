@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleframework.Tests">
+      <class name="seleframework.TestsPt_BR">
         <methods>
-          <include name="navigateToHomePage"/>
+          <include name="testloginGreetingsVanity"/>
+          <include name="tearDown"/>
+          <include name="testYourAccountEN_US"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- seleframework.Tests -->
+      </class> <!-- seleframework.TestsPt_BR -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

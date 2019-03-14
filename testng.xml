@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="4" parallel="methods" name="Test">
+  <parameter name="URL" value="https://iqa2-sjc.aa.com/homePage.do"/>
+   <parameter name="username" value="LPX2000"/>
+   <parameter name="lastname" value="bartlett"/>
+    <classes>
+      <class name="seleframework.TestsEn_US"/>
+      <class name="seleframework.TestsEs_MX"/>
+      <class name="seleframework.TestsPt_BR"/> 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

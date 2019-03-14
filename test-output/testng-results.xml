@@ -1,17 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="3" total="9" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3003" started-at="2019-03-07T19:18:32Z" finished-at="2019-03-07T19:18:35Z">
+  <suite name="Suite" duration-ms="25373" started-at="2019-03-13T20:55:54Z" finished-at="2019-03-13T20:56:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3003" started-at="2019-03-07T19:18:32Z" finished-at="2019-03-07T19:18:35Z">
-      <class name="seleframework.Tests">
-        <test-method status="PASS" signature="navigateToHomePage()[pri:0, instance:seleframework.Tests@643b1d11]" name="navigateToHomePage" duration-ms="2982" started-at="2019-03-07T19:18:32Z" finished-at="2019-03-07T19:18:35Z">
+    <test name="Test" duration-ms="25373" started-at="2019-03-13T20:55:54Z" finished-at="2019-03-13T20:56:19Z">
+      <class name="seleframework.TestsEs_MX">
+        <test-method status="PASS" signature="testloginGreetingsVanity(java.lang.String, java.lang.String)[pri:1, instance:seleframework.TestsEs_MX@20e2cbe0]" name="testloginGreetingsVanity" duration-ms="3780" started-at="2019-03-13T20:56:12Z" finished-at="2019-03-13T20:56:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LPX2000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bartlett]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToHomePage -->
-      </class> <!-- seleframework.Tests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testloginGreetingsVanity -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:seleframework.TestsEs_MX@20e2cbe0]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-03-13T20:56:16Z" finished-at="2019-03-13T20:56:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testloginGreetingsVanity status=SUCCESS method=TestsEs_MX.testloginGreetingsVanity(java.lang.String, java.lang.String)[pri:1, instance:seleframework.TestsEs_MX@20e2cbe0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testYourAccountEN_US()[pri:2, instance:seleframework.TestsEs_MX@20e2cbe0]" name="testYourAccountEN_US" duration-ms="1953" started-at="2019-03-13T20:56:16Z" finished-at="2019-03-13T20:56:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testYourAccountEN_US -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:seleframework.TestsEs_MX@20e2cbe0]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-03-13T20:56:18Z" finished-at="2019-03-13T20:56:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testYourAccountEN_US status=SUCCESS method=TestsEs_MX.testYourAccountEN_US()[pri:2, instance:seleframework.TestsEs_MX@20e2cbe0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- seleframework.TestsEs_MX -->
+      <class name="seleframework.TestsPt_BR">
+        <test-method status="PASS" signature="testloginGreetingsVanity(java.lang.String, java.lang.String)[pri:1, instance:seleframework.TestsPt_BR@68be2bc2]" name="testloginGreetingsVanity" duration-ms="3210" started-at="2019-03-13T20:56:12Z" finished-at="2019-03-13T20:56:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LPX2000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bartlett]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testloginGreetingsVanity -->
+        <test-method status="PASS" signature="testYourAccountPt_BR()[pri:2, instance:seleframework.TestsPt_BR@68be2bc2]" name="testYourAccountPt_BR" duration-ms="2054" started-at="2019-03-13T20:56:16Z" finished-at="2019-03-13T20:56:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testYourAccountPt_BR -->
+      </class> <!-- seleframework.TestsPt_BR -->
+      <class name="seleframework.TestsEn_US">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:seleframework.TestsEn_US@2a5ca609]" name="setup" is-config="true" duration-ms="7159" started-at="2019-03-13T20:55:54Z" finished-at="2019-03-13T20:56:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://iqa2-sjc.aa.com/homePage.do]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:seleframework.TestsEs_MX@20e2cbe0]" name="setup" is-config="true" duration-ms="5525" started-at="2019-03-13T20:56:01Z" finished-at="2019-03-13T20:56:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://iqa2-sjc.aa.com/homePage.do]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:seleframework.TestsPt_BR@68be2bc2]" name="setup" is-config="true" duration-ms="5923" started-at="2019-03-13T20:56:06Z" finished-at="2019-03-13T20:56:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://iqa2-sjc.aa.com/homePage.do]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testloginGreetingsVanity(java.lang.String, java.lang.String)[pri:1, instance:seleframework.TestsEn_US@2a5ca609]" name="testloginGreetingsVanity" duration-ms="4139" started-at="2019-03-13T20:56:12Z" finished-at="2019-03-13T20:56:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LPX2000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bartlett]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testloginGreetingsVanity -->
+        <test-method status="PASS" signature="testYourAccountEN_US()[pri:2, instance:seleframework.TestsEn_US@2a5ca609]" name="testYourAccountEN_US" duration-ms="2257" started-at="2019-03-13T20:56:16Z" finished-at="2019-03-13T20:56:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testYourAccountEN_US -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:seleframework.TestsEn_US@2a5ca609]" name="tearDown" is-config="true" duration-ms="122" started-at="2019-03-13T20:56:19Z" finished-at="2019-03-13T20:56:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:seleframework.TestsEs_MX@20e2cbe0]" name="tearDown" is-config="true" duration-ms="115" started-at="2019-03-13T20:56:19Z" finished-at="2019-03-13T20:56:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:seleframework.TestsPt_BR@68be2bc2]" name="tearDown" is-config="true" duration-ms="111" started-at="2019-03-13T20:56:19Z" finished-at="2019-03-13T20:56:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- seleframework.TestsEn_US -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

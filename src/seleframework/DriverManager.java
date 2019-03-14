@@ -1,9 +1,11 @@
 package seleframework;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 public abstract class DriverManager {
 	protected WebDriver driver;
+	protected EventFiringWebDriver edriver;
 
 	protected abstract void createWebDriver();
 
