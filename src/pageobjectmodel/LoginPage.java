@@ -1,4 +1,4 @@
-package seleframework;
+package pageobjectmodel;
 
 import java.util.concurrent.TimeUnit;
 

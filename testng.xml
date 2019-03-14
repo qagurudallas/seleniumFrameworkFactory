@@ -2,13 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="4" parallel="methods" name="Test">
-  <parameter name="URL" value="https://iqa2-sjc.aa.com/homePage.do"/>
-   <parameter name="username" value="LPX2000"/>
-   <parameter name="lastname" value="bartlett"/>
+  <parameter name="URL" value="https://qasilo20-sjc.aa.com/homePage.do"/>
+   <parameter name="regularusername" value="LPX2000"/>
+   <parameter name="regularlastname" value="bartlett"/>
+   <parameter name="eliteusername" value="270rfy8"/>
+   <parameter name="elitelastname" value="southern"/>
+  
     <classes>
-      <class name="seleframework.TestsEn_US"/>
-      <class name="seleframework.TestsEs_MX"/>
-      <class name="seleframework.TestsPt_BR"/> 
+      <class name="testlocale.TestsEn_US"></class>
+      <class name="testlocale.TestsEs_MX"></class>
+      <class name="testlocale.TestsPt_BR"></class>     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

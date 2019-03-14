@@ -3,14 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleframework.TestsPt_BR">
+      <class name="testlocale.TestsPt_BR">
         <methods>
           <include name="testloginGreetingsVanity"/>
-          <include name="tearDown"/>
-          <include name="testYourAccountEN_US"/>
+          <include name="testPartnerLink"/>
           <include name="setup"/>
+          <include name="testYourAccountPt_BR"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- seleframework.TestsPt_BR -->
+      </class> <!-- testlocale.TestsPt_BR -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

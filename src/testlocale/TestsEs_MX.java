@@ -1,8 +1,9 @@
-package seleframework;
+package testlocale;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -13,6 +14,11 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import driverfactory.DriverFactoryManager;
+import driverfactory.DriverManager;
+import driverfactory.DriverType;
+import pageobjectmodel.LoginPage;
+
 public class TestsEs_MX {
 	DriverManager driverManager;
 	WebDriver driver;
@@ -20,22 +26,20 @@ public class TestsEs_MX {
 	LoginPage loginObj;
 
 	@BeforeTest
-	@Parameters({"URL"})
+	@Parameters({ "URL" })
 	public void setup(String url) {
 		// driverManager = DriverFactoryManager.getDriverManager(DriverType.SAFARI);
 		// System.setProperty("webdriver.safari.noinstall", "true");
 		driverManager = DriverFactoryManager.getDriverManager(DriverType.CHROME);
 		System.setProperty("webdriver.chrome.driver", "/Applications/chromedriver");
-
 		driver = driverManager.getWebDriver();
 		loginObj = new LoginPage(driver);
 		driver.manage().window().maximize();
-		driver.get(url+locale);
+		driver.get(url + locale);
 
 	}
 
-
-	@Parameters({ "username", "lastname" })
+	@Parameters({ "eliteusername", "elitelastname" })
 	@Test(priority = 1)
 	public void testloginGreetingsVanity(String username, String lastname) {
 		loginObj.login(username, lastname, "testing");
@@ -53,14 +57,21 @@ public class TestsEs_MX {
 		System.out.println(Thread.currentThread().getId());
 	}
 
-	@Test(priority = 3, enabled = false)
-	public void testYourAccountPageTitleES_US() {
 
-		Select country = new Select(driver.findElement(By.id("aa-country-selector")));
-		country.selectByVisibleText("United States");
-		Select lang = new Select(driver.findElement(By.id("aa-language-selector")));
-		lang.selectByVisibleText("Español");
-		driver.findElement(By.id("aa-choose-locale")).sendKeys(Keys.ENTER);
+	@Test(priority = 3)
+	public void testPartnerLink() {
+		driver.findElement(By.id("member-info-menu-advantage")).sendKeys(Keys.ENTER);
+		String partnerLink = driver.findElement(By.id("menu-cuentas_asociadas")).getText();
+		Assert.assertTrue(partnerLink.contains("Cuentas asociadas"));
+
+	}
+	
+	@Test(priority = 4)
+	public void HyattPartnerPageTitle() {
+		driver.findElement(By.id("member-info-menu-advantage")).sendKeys(Keys.ENTER);
+		WebElement partnerLink = driver.findElement(By.id("menu-cuentas_asociadas"));
+		partnerLink.sendKeys(Keys.ENTER);
+		Assert.assertTrue(driver.getTitle().contains("American Airlines - Cuentas asociadas - WOH"));
 
 	}
 

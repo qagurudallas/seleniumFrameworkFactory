@@ -2,18 +2,24 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)" parallel="methods">
-    <parameter name="url" value="https://iqa2-sjc.aa.com/homePage.do"/>
-    <parameter name="username" value="LPX2000"/>
-    <parameter name="lastname" value="bartlett"/>
+    <parameter name="regularusername" value="LPX2000"/>
+    <parameter name="elitelastname" value="southern"/>
+    <parameter name="regularlastname" value="bartlett"/>
+    <parameter name="eliteusername" value="270rfy8"/>
+    <parameter name="URL" value="https://qasilo20-sjc.aa.com/homePage.do"/>
+    <groups>
+      <run>
+        <exclude name="testlocale.TestsEs_MX"/>
+      </run>
+    </groups>
     <classes>
-      <class name="seleframework.TestsEn_US">
+      <class name="testlocale.TestsEn_US">
         <methods>
-          <include name="tearDown"/>
           <include name="setup"/>
-          <include name="testYourAccountEN_US"/>
-          <include name="testloginGreetingsVanity"/>
+          <include name="tearDown"/>
+          <include name="testEnterWOHdetails"/>
         </methods>
-      </class> <!-- seleframework.TestsEn_US -->
+      </class> <!-- testlocale.TestsEn_US -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
