@@ -24,6 +24,7 @@ public class TestsEn_US {
 	String locale = "?locale=en_US";
 	LoginPage loginObj;
 	SoftAssert sassert;
+	int x;
 
 	@BeforeTest
 	@Parameters({ "URL" })
