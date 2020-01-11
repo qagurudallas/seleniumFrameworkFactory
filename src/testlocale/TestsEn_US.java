@@ -29,8 +29,7 @@ public class TestsEn_US {
 	@Parameters({ "URL" })
 	public void setup(String url) {
 
-		// driverManager = DriverFactoryManager.getDriverManager(DriverType.SAFARI);
-		// System.setProperty("webdriver.safari.noinstall", "true");
+		
 		driverManager = DriverFactoryManager.getDriverManager(DriverType.CHROME);
 		System.setProperty("webdriver.chrome.driver", "/Applications/chromedriver");
 		driver = driverManager.getWebDriver();
