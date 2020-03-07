@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)" parallel="methods">
     <parameter name="regularusername" value="LPX2000"/>
@@ -7,19 +7,39 @@
     <parameter name="regularlastname" value="bartlett"/>
     <parameter name="eliteusername" value="270rfy8"/>
     <parameter name="URL" value="https://qasilo20-sjc.aa.com/homePage.do"/>
-    <groups>
-      <run>
-        <exclude name="testlocale.TestsEs_MX"/>
-      </run>
-    </groups>
     <classes>
+      <class name="testlocale.TestsEs_MX">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testYourAccountEN_US"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="HyattPartnerPageTitle"/>
+          <include name="testPartnerLink"/>
+          <include name="testloginGreetingsVanity" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testlocale.TestsEs_MX -->
       <class name="testlocale.TestsEn_US">
         <methods>
+          <include name="testYourAccountEN_US"/>
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="testEnterWOHdetails"/>
+          <include name="testloginGreetingsVanity" invocation-numbers="0"/>
+          <include name="HyattPartnerPageTitle"/>
+          <include name="testPartnerLink"/>
         </methods>
       </class> <!-- testlocale.TestsEn_US -->
+      <class name="testlocale.TestsPt_BR">
+        <methods>
+          <include name="testloginGreetingsVanity" invocation-numbers="0"/>
+          <include name="HyattPartnerPageTitle"/>
+          <include name="testPartnerLink"/>
+          <include name="setup"/>
+          <include name="testYourAccountPt_BR"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testlocale.TestsPt_BR -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
