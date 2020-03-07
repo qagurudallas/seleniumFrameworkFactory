@@ -100,10 +100,20 @@ public class TestsEn_US {
 		sassert.assertAll();
 	}
 
+	
 	@Test(enabled=false)
-	public void testing() {
+	public void testing1() {
 		
 	}
+	@Test(enabled=false)
+	public void testing2() {
+		
+	}
+	@Test(enabled=false)
+	public void testing3() {
+		
+	}
+	
 	@AfterTest
 	public void tearDown() {
 		driver.quit();
